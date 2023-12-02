@@ -1,22 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const handleSearch = (event) => {
+    event.preventDefault();
+    // Твоя логика обработки поиска
+    console.log("Выполняется поиск");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="black-bar">
+      <div className="spacer" /> {/* Добавим пустой элемент для пространства между логотипом и поисковой строкой */}
+        <form onSubmit={handleSearch} className="search-bar">
+            <input type="text" placeholder="Поиск" />
+          </form>
       </header>
     </div>
   );

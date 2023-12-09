@@ -3,9 +3,8 @@ import '../App.css';
 //className="logo">
 function Llogo(props) {
     return(
-        <header className='logo'> 
-        {props.sitename}
-        </header>
+        <img className='logo' src={props.sitename}/> 
+        
     )
 }
 export default Llogo;

@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif; /* Изменить шрифт, если нужно */
-  /*background: url(/images/Фон.jpg) no-repeat center center fixed; /* Путь к изображению */
+  font-family: 'Arial', sans-serif;
   background-size: cover;
   color: black;
 }
@@ -37,54 +36,7 @@ body {
   max-width: 1200px;
   height: 100%;
 }
-.card-item {
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 280px;
-  padding: 15px;
-  height: fit-content;
-  /*background-image: url('../public/images/Фон3.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  
-}
 
-.card-item__image-viewport {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 5px;
-  overflow: hidden;
-}
-
-.card-item__image {
-  display: block;
-  width: 100%;
-  transition: .2s ease-in-out;
-}
-
-.card-item__image-viewport:hover {
-  cursor: pointer;
-}
-
-.card-item__image-viewport:hover .card-item__image {
-  transform: scale(1.2);
-}
-
-.card-item__image-viewport:hover .card-item__quick-view {
-  transform: translateY(0px);
-}
-
-.card-item__title {
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5em;
-}
 .black-bar {
   position: fixed;
   top: 0;
@@ -143,8 +95,4 @@ nav li {
   margin-right: 10px;
   cursor: pointer;
 }
-@media screen and (max-width: 1280px) {
-  .main__content {
-    grid-template-columns: repeat(3, 280px);
-  }
-}
+
